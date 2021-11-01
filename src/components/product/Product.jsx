@@ -1,11 +1,18 @@
-import "./project.css"
+import "./product.css";
 
-const Project = () => {
+const Product = ({img,link}) => {
   return (
-    <div>
-      card
+    <div className="p">
+      <div className="p-browser">
+        <div className="p-circle"></div>
+        <div className="p-circle"></div>
+        <div className="p-circle"></div>
+      </div>
+      <a href={link} target="_blank" rel="noreferrer">
+        <img src={img} alt="" className="p-img" />
+      </a>
     </div>
-  )
-}
+  );
+};
 
-export default Project
+export default Product;
